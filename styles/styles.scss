@@ -1,5 +1,6 @@
 $primaryColor :rgba(49, 184, 67, 0.382);
 $SecondaryColor :rgba(49, 184, 67, 0.792);
+$hoverColor:  rgba(0, 0, 255, 0.268);
 $textColor : rgb(0, 0, 0);
 
 header {
@@ -22,7 +23,7 @@ header {
         border-radius: 5px;
         padding: 10px;
         &:hover {
-            color: rgba(0, 0, 255, 0.268);
+            color: $hoverColor;
         }
     }
 }

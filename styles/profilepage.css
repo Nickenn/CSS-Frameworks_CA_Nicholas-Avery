@@ -3,6 +3,20 @@
   border-radius: 2px;
 }
 
+.message {
+  padding: 30px;
+  margin: 30px;
+  background-color: rgba(0, 128, 0, 0.645);
+  border-radius: 3px;
+  color: white;
+  font-size: 1.2rem;
+  max-width: 45%;
+}
+
+.interests {
+  border: solig 3px;
+}
+
 .about {
   border: none;
 }/*# sourceMappingURL=profilepage.css.map */

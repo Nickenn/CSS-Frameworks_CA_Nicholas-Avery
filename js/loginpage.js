@@ -1,23 +1,14 @@
-const form = document.querySelector("#contactForm");
+const form = document.querySelector("#Form");
 const fullName = document.querySelector("#name");
-const email = document.querySelector("#email");
-const subject =document.querySelector("#subject");
-const message = document.querySelector("#message");
+const password = document.querySelector("#password");
 const button = document.querySelector(".btn-submit");
 
 const nameError = document.querySelector("#nameError");
 const emailError = document.querySelector("#emailError");
-const subjectError = document.querySelector("#subjectError");
-const messsageError = document.querySelector("#messageError");
 
 function validateForm() {
     event.preventDefault();
 
-    if (checklength(fullName.value, 5) === true) {
-        nameError.style.display = "none";
-    } else {
-        nameError.style.display = "block";
-    }
 
     if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
@@ -25,16 +16,10 @@ function validateForm() {
         emailError.style.display = "block"
     }
 
-    if (checklength(subject.value, 15) === true) {
-        subjectError.style.display = "none";
+    if (checklength(password.value, 8) === true) {
+        nameError.style.display = "none";
     } else {
-        subjectError.style.display = "block";
-    }
-
-    if (checklength(message.value, 25) === true) {
-        messsageError.style,display = "none";
-    } else {
-        messsageError.style,display = "block";
+        nameError.style.display = "block";
     }
 }
 
@@ -43,7 +28,7 @@ form.addEventListener("submit", validateForm);
 
 function formSubmit(event)  {
     event.preventDefault();
-    message.innerHTML = `<div class="message">Thank you for contacting us. We can't wait to hear from you!.</div>`;
+    message.innerHTML = `<div class="message">Login successful!</div>`;
     form.reset();
 }
 
