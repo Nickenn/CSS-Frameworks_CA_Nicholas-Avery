@@ -1,0 +1,27 @@
+header h1 {
+  color: rgba(49, 184, 67, 0.792);
+  margin: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+header a {
+  color: rgba(49, 184, 67, 0.382);
+  text-decoration: none;
+  margin: 20px;
+}
+header .nav {
+  color: rgba(49, 184, 67, 0.382);
+  border-radius: 5px;
+  padding: 10px;
+}
+header .nav:hover {
+  color: rgba(0, 0, 255, 0.268);
+}
+
+.card {
+  border-color: rgba(49, 184, 67, 0.382);
+}
+
+footer {
+  background-color: rgba(49, 184, 67, 0.382);
+}/*# sourceMappingURL=styles.css.map */
