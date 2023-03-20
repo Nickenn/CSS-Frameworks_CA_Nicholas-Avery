@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Login page for MeBook social site." />
+    <meta name="description" content="Register page for MeBook social site." />
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <script src="/js/loginpage.js"></script>
-    <title>MeBook | LOGIN</title>
+    <script src="/js/register.js"></script>
+    <title>MeBook | REGISTER ACCOUNT</title>
   </head>
   <body>
     <header>
@@ -34,40 +34,48 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <form method="GET" id="login-form" action="login.php">
-          <div class="form-group m-auto p-4 col-md-6 m-3">
-            <label for="exampleInputEmail1"
-              >Please enter your email address</label
-            >
+      <form
+        class="container"
+        id="userRegistration"
+        method="POST"
+        action="example.php"
+      >
+        <div class="form-row">
+          <div class="form-group col-md-6 m-3">
+            <label for="email">Please enter your email</label>
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="example@noroff.com"
+              id="email"
+              placeholder="Email"
               required
             />
           </div>
-          <div class="form-group m-auto p-4 col-md-6 m-3">
-            <label for="exampleInputPassword1"
-              >Please enter your password</label
-            >
+          <div class="form-group col-md-6 m-3">
+            <label for="name">Please enter a username</label>
             <input
-              type="password"
+              type="text"
               class="form-control"
-              id="exampleInputPassword1"
-              placeholder="password"
+              id="name"
+              placeholder="Username"
               required
             />
           </div>
-          <center>
-            <button type="submit" class="btn btn-success mx-auto col-2">
-              Log in
-            </button>
-          </center>
-        </form>
-      </div>
+        </div>
+        <div class="form-group col-md-6 m-3">
+          <label for="password">Please enter a password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-success m-4" id="registerBtn">
+          Register account
+        </button>
+      </form>
     </main>
     <footer class="text-center text-lg-start bg-white text-muted">
       <section
