@@ -1,6 +1,8 @@
-.profilePic {
+.profile-pic {
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
+  max-width: 200px;
+  margin: auto;
 }
 
 .message {
@@ -14,9 +16,19 @@
 }
 
 .interests {
-  border: solig 3px;
+  border: none;
 }
 
-.about {
-  border: none;
-}/*# sourceMappingURL=profilepage.css.map */
+.posts-list {
+  border: solid 1px;
+  border-color: rgba(49, 184, 67, 0.275);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=profilepage.css.map */
+

@@ -5,7 +5,7 @@ header h1 {
   text-transform: uppercase;
 }
 header a {
-  color: rgba(49, 184, 67, 0.382);
+  color: rgba(49, 184, 67, 0.888);
   text-decoration: none;
   margin: 20px;
 }
@@ -18,10 +18,47 @@ header .nav:hover {
   color: rgba(0, 0, 255, 0.268);
 }
 
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .40rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
 .card {
   border-color: rgba(49, 184, 67, 0.382);
 }
 
+.hide {
+  display: none;
+}
+
 footer {
   background-color: rgba(49, 184, 67, 0.382);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+@media (max-width: 500px) {
+  main h5 {
+    font-size: 16px;
+  }
+  main p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 514px) {
+  nav {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
