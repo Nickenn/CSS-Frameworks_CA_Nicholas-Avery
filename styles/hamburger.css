@@ -37,7 +37,7 @@ a {
 }
 
 .nav-link:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(66, 195, 255);
 }
 
 .hamburger {
@@ -103,6 +103,12 @@ a {
 
 @media (max-width: 676px) {
   .nav-menu {
-    font-size: small;
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-menu {
+    font-size: xx-small;
   }
 }
