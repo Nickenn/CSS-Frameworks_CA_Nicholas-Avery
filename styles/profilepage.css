@@ -30,5 +30,23 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=profilepage.css.map */
+.my-posts {
+  color: black;
+}
 
+@media (max-width: 1400px) {
+  .my-posts {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 500px) {
+  main h5 {
+    font-size: 16px;
+  }
+  main p {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=profilepage.css.map */

@@ -15,13 +15,17 @@ header .nav {
   padding: 10px;
 }
 header .nav:hover {
+  color: rgba(0, 0, 255, 0.103);
+}
+
+nav a:hover {
   color: rgba(0, 0, 255, 0.268);
 }
 
 .search-wrapper {
   display: flex;
   flex-direction: column;
-  gap: .40rem;
+  gap: 0.4rem;
 }
 
 input {
@@ -46,18 +50,6 @@ footer {
   }
   main p {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 800px) {
-  nav {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 514px) {
-  nav {
-    font-size: 10px;
   }
 }
 

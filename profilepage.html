@@ -11,18 +11,19 @@
     />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/profilepage.css" />
+    <link rel="stylesheet" href="/styles/hamburger.css">
     <title>MeBook | My Profile</title>
   </head>
   <body>
     <header>
-      <h1><a href="/index.html">MeBook</a></h1>
-      <nav>
-        <ul class="nav justify-content-end">
+      <a class="nav-branding" href="/index.html">MeBook</a>
+      <nav class="navbar d-flex">
+        <ul class="nav-menu">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link"" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/profilepage.html">My Profile</a>
+            <a class="nav-link" href="/profilepage.html">My Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/loginpage.html">Login</a>
@@ -31,11 +32,16 @@
             <a class="nav-link" href="/register.html">Register account</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <main>
       <div class="container">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex align-items-start">
           <div class="col-xl-6 col-lg-10 col-md-12">
             <h2 class="mt-4 mb-0">My profile</h2>
             <div class="profile-pic w-25 m-4">
@@ -46,7 +52,7 @@
               />
               <div class="card-body"></div>
             </div>
-            <div class="card w-50 m-4" style="width: 18rem">
+            <div class="card w-75 m-4">
               <div class="card-body">
                 <h5 class="card-title">About me</h5>
                 <p class="card-text">
@@ -56,7 +62,7 @@
                 </p>
               </div>
             </div>
-            <div class="card w-50 m-4" style="width: 18rem">
+            <div class="card w-75 m-4">
               <div class="card-body">
                 <h5 class="card-title">Career</h5>
                 <p class="card-text">
@@ -66,7 +72,7 @@
                 </p>
               </div>
             </div>
-            <div class="card w-50 m-4" style="width: 18rem">
+            <div class="card w-75 m-4">
               <div class="card-body interests">
                 <h5 class="card-title">My interests</h5>
                 <p class="card-text"><b> - Snowboarding</b></p>
@@ -76,37 +82,23 @@
                 <p class="card-text"><b> - Astronomy</b></p>
               </div>
             </div>
-            <center>
-              <h5 class="card-title mt-5">Contact Info</h5>
-              <p class="card-text">Email: <b>example@hotmail.com</b></p>
-            </center>
           </div>
         </div>
       </div>
       <div class="container">
-        <center>
-          <form action="POST" class="mt-5">
-            <h4>Create a new post</h4>
-            <label for="messsage">
-              <textarea
-                name="message"
-                id="message"
-                cols="80"
-                rows="12"
-                maxlength="100"
-                class="form-control"
-              ></textarea>
-              <center>
-                <button type="submit" class="btn btn-success mx-auto col-4 mt-4">
-                  Publish post
-                </button>
-              </center>
-            </label>
-          </form>
-        </center>
-        <div class="d-flex">
-        <div class="card w-25 m-4 p-4">
-          <h5 class="card-title mt-3 mb-4">My Contacts:</h5>
+        <center><div class="container d-flex align-items-center">
+            <div class="col-xl-6 col-lg-10 col-md-12">
+        <div class="card w-100 mt-4">
+          <h4 class="card-title mt-2 mb-1">My Posts</h4>
+          <a href="/index.html"><h5 class="my-posts card-text m-3 posts-list">Post title 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5></a>
+          <a href="/index.html"><h5 class="my-posts card-text m-3 posts-list">Post title 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5></a>
+          <a href="/index.html"><h5 class="my-posts card-text m-3 posts-list">Post title 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5></a>
+          <a href="/index.html"><h5 class="my-posts card-text m-3 posts-list">Post title 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5></a>
+          <a href="/index.html"><h5 class="my-posts card-text m-3 posts-list">Post title 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5></a>
+          <a href="/index.html"><h5 class="my-posts card-text m-3 posts-list">Post title 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5></a>
+        </div>
+        <div class="card w-50 mt-4 p-4">
+          <h5 class="card-title">My Contacts:</h5>
           <p class="card-text mt-3">David</p>
           <p class="card-text">Adam</p>
           <p class="card-text">Jennifer</p>
@@ -115,18 +107,34 @@
           <p class="card-text">Dwight</p>
           <p class="card-text">Jim</p>
         </div>
-        <div class="card w-75 m-4 p-4">
-          <h5 class="card-title mt-3 mb-4">My Posts</h5>
-          <a href="/index.html"><h4 class="card-text m-3 posts-list">Post title 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-          <a href="/index.html"><h4 class="card-text m-3 posts-list">Post title 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-          <a href="/index.html"><h4 class="card-text m-3 posts-list">Post title 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-          <a href="/index.html"><h4 class="card-text m-3 posts-list">Post title 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-          <a href="/index.html"><h4 class="card-text m-3 posts-list">Post title 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-          <a href="/index.html"><h4 class="card-text m-3 posts-list">Post title 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-        </div>
       </div>
-      </div>
-      <center>
+    </div>
+  </div>
+    </center>
+    <center>
+      <h5 class="card-title mt-5">Contact Info</h5>
+      <p class="card-text">Email: <b>example@hotmail.com</b></p>
+    </center>
+    <center>
+      <form action="POST" class="mt-5">
+        <h4>Create a new post</h4>
+        <label for="messsage">
+          <textarea
+            name="message"
+            id="message"
+            cols="80"
+            rows="12"
+            maxlength="100"
+            class="form-control"
+          ></textarea>
+          <center>
+            <button type="submit" class="btn btn-success mx-auto col-4 mt-4">
+              Publish post
+            </button>
+          </center>
+        </label>
+      </form>
+    </center>
     </main>
     <footer class="text-center text-lg-start bg-white text-muted">
       <section
@@ -184,5 +192,6 @@
         >
       </div>
     </footer>
+    <script src="/hamburger.js"></script>
   </body>
 </html>

@@ -10,27 +10,32 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <script src="/js/register.js"></script>
+    <link rel="stylesheet" href="/styles/hamburger.css" />
     <title>MeBook | REGISTER ACCOUNT</title>
   </head>
   <body>
     <header>
-      <h1><a href="/index.html">MeBook</a></h1>
-      <nav>
-        <ul class="nav justify-content-end">
+      <a class="nav-branding" href="/index.html">MeBook</a>
+      <nav class="navbar d-flex">
+        <ul class="nav-menu">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link"" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/profilepage.html">My Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/loginpage.html">Login</a>
+            <a class="nav-link" href="/loginpage.html">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/register.html">Register account</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <main>
@@ -133,5 +138,7 @@
         >
       </div>
     </footer>
+    <script src="/js/register.js"></script>
+    <script src="/hamburger.js"></script>
   </body>
 </html>
